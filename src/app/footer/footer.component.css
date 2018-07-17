@@ -1,0 +1,21 @@
+#powered {
+  color: aliceblue;
+  margin-left: 20px;
+}
+
+#angular {
+  font-size: 40px;
+  margin-left: 20px;
+}
+
+.version {
+  padding: 0 14px;
+}
+
+#footer {
+  height: 50px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}

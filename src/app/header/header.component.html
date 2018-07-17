@@ -1,7 +1,14 @@
-<mat-toolbar color="primary" class="mat-elevation-z4">
+<mat-toolbar id="toolbar" color="primary" class="mat-elevation-z4">
   <mat-toolbar-row>
-    <span>Sina Darvishi</span>
+    <a onclick="window.open('https://sinadarvi.github.io', '_blank');" id="myName">
+      <font id="myNameFont">Sina </font>
+    </a>
+    <a onclick="window.open('https://sinadarvi.github.io', '_blank');" id="myFamily">
+      <font id="myFamilyFont">|Darvishi</font>
+    </a>
     <span class="spacer"></span>
-    <mat-icon class="github-icon">favorite</mat-icon>
+    <button mat-button onclick="window.open('https://github.com/sinadarvi', '_blank');">
+      <i id="github-icon" class="fab fa-github"></i>
+    </button>
   </mat-toolbar-row>
 </mat-toolbar>

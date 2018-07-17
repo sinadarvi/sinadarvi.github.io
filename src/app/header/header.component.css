@@ -1,6 +1,31 @@
-.github-icon {
-  padding: 0 14px;
+#github-icon {
+  padding: 0 34px;
+  font-size:30px;
 }
+
+#toolbar {
+  background-color: #FFFFFF;
+  color: black;
+}
+
+#myNameFont{
+  font-family: 'Poiret One', cursive;
+}
+
+#myName {
+  margin-left: 30px;
+  font-size: 40px;
+}
+
+#myFamilyFont{
+  font-family: 'Great Vibes', cursive;
+}
+
+#myFamily {
+  margin-top: 5px;
+  font-size: 40px;
+}
+
 
 .spacer {
   flex: 1 1 auto;
