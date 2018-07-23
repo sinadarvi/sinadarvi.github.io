@@ -12,4 +12,6 @@ export class BodyComponent implements OnInit {
   ngOnInit() {
   }
 
+  //TODO : onclick for About Me! button should be add here
+
 }
