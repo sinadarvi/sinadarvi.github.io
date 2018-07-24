@@ -9,4 +9,9 @@ import {MatCardModule} from '@angular/material/card';
   exports: [MatButtonModule, MatCheckboxModule, MatToolbarModule, MatIconModule, MatCardModule],
 })
 export class MaterialModule {
+  static width = 0;
+  static height = 0;
+  static r = 200;
+  static pageX = 0;
+  static pageY = 0;
 }

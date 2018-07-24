@@ -1,18 +1,19 @@
-#github-icon {
-  font-size:30px;
-}
-
-#twitter-icon {
-  font-size:30px;
-}
-#twitter-icon-btn {
-  margin-right: 70px;
-  font-size:30px;
-}
-
 #toolbar {
   background-color: #e53935;
   color: white;
+}
+
+#github-icon {
+font-size:30px;
+}
+
+#twitter-icon {
+font-size:30px;
+}
+
+#twitter-icon-btn {
+margin-right: 70px;
+font-size:30px;
 }
 
 #myNameFont{

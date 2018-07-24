@@ -18,9 +18,8 @@ import { FooterComponent } from './footer/footer.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {

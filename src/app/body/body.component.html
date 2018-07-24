@@ -1,6 +1,6 @@
-<mat-card id="myIntro" class="mat-elevation-z4">
+<mat-card id="myIntro" class="mat-elevation-z4" xmlns="">
   <section id="sectionClickOnMe" class="portfolio-experiment">
-    <a id="clickOnMe" onclick="alert('Under Development')">
+    <a id="clickOnMe" (click)="clickOnMe($event)">
       <span class="text">About Me!</span>
       <span class="line -right"></span>
       <span class="line -top"></span>
@@ -8,7 +8,12 @@
       <span class="line -bottom"></span>
     </a>
   </section>
+
+
 </mat-card>
 <div mat-card-avatar id="myAvatar" class="mat-elevation-z4"></div>
+<div id="splash">
+  <div id='circle'></div>
+</div>
 
 
