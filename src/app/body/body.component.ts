@@ -85,6 +85,7 @@ export class BodyComponent implements OnInit {
       // circle.style.display = 'none';
       splash.style.backgroundColor = "#f26522";
       splash.removeChild(circle);
+      alert('About me page working in progress!')
     })
 
 
