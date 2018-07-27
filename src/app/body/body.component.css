@@ -41,6 +41,12 @@
   display: none;
 }
 
+.MyTwitter {
+  position: absolute;
+  left: 175px;
+  top: 100px;
+}
+
 .portfolio-experiment {
   background: transparent;
 }

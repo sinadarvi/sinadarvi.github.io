@@ -8,14 +8,16 @@ import {animate, AnimationBuilder, AnimationPlayer, style} from "@angular/animat
   styleUrls: ['./body.component.css']
 })
 export class BodyComponent implements OnInit {
-  state = 'normal';
 
   @ViewChild('one') d1: ElementRef;
   public player: AnimationPlayer;
+
   constructor(private elementRef: ElementRef, private _builder: AnimationBuilder) {
   }
 
   ngOnInit() {
+    var aboutMePage = this.elementRef.nativeElement.ownerDocument.getElementById('about-me-page');
+    // aboutMePage.style.display = 'none'
   }
 
   setSize() {
@@ -31,7 +33,6 @@ export class BodyComponent implements OnInit {
   }
 
   clickOnMe($event) {
-    // alert('test')
     const splash = this.elementRef.nativeElement.ownerDocument.getElementById('splash');
     const btn = this.elementRef.nativeElement.ownerDocument.getElementById('clickOnMe');
     splash.style.display = 'block';
@@ -52,29 +53,18 @@ export class BodyComponent implements OnInit {
     circle.style.top = MaterialModule.pageY.toString() + 'px';
     circle.style.marginLeft = -MaterialModule.r.toString() + 'px';
     circle.style.marginTop = -MaterialModule.r.toString() + 'px';
-    // circle.style({
-    // position: 'absolute',
-    //   'background-color': "#f26522",
-    //   width: (MaterialModule.r * 2).toString() + 'px',
-    //   height: (MaterialModule.r * 2).toString() + 'px',
-    //   "border-radius": "50%",
-    //   left: MaterialModule.pageX.toString() + 'px',
-    //   top: MaterialModule.pageX.toString() + 'px',
-    //   'margin-left': -MaterialModule.r.toString() + 'px',
-    //   'margin-top': -MaterialModule.r.toString() + 'px'
-    // });
 
     const factory = this._builder.build([
       style({
-          position: 'absolute',
-          'background-color': "#f26522",
-          width: 0,
-          height: 0,
-          "border-radius": "50%",
-          left: MaterialModule.pageX,
-          top: MaterialModule.pageY,
-          'margin-left': 0,
-          'margin-top': 0
+        position: 'absolute',
+        'background-color': "#f26522",
+        width: 0,
+        height: 0,
+        "border-radius": "50%",
+        left: MaterialModule.pageX,
+        top: MaterialModule.pageY,
+        'margin-left': 0,
+        'margin-top': 0
       }),
       animate('600ms ease-in-out')
     ]);
@@ -83,10 +73,12 @@ export class BodyComponent implements OnInit {
     this.player.play();
     this.player.onDone(() => {
       // circle.style.display = 'none';
-      splash.style.backgroundColor = "#f26522";
-      splash.removeChild(circle);
+      splash.style.backgroundColor = "#ECEFF1";
+      // splash.removeChild(circle);
       alert('About me page working in progress!')
-    })
+      // this.elementRef.nativeElement.ownerDocument.getElementById('about-me-page').style.display = 'block';
+
+    });
 
 
   }

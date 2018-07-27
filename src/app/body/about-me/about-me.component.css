@@ -1,0 +1,13 @@
+#container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ECEFF1;
+}
+
+#lime {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #f26522;
+}
